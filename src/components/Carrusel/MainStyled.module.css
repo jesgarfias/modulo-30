@@ -1,0 +1,35 @@
+.carusel_card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.8);
+    transition: 0.5s ease-in-out;
+
+}
+.carusel_cardActive{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    pointer-events: visible;
+}
+.carusel_arrowL{
+    left: 15px;
+}
+.carusel_arrowR{
+    right: 15px;
+}
