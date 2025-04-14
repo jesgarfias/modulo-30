@@ -5,6 +5,9 @@ const ResultsTitleContainer=styled.section`
     align-items: center;
     font-size: 1.5em;
     color:#567199 ;
+    @media screen and (max-width:450px) {
+        font-size: 1em;
+    }
 `
 const ResultsContainer=styled.section`
     display: flex;

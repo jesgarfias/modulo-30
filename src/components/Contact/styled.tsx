@@ -9,6 +9,9 @@ const FormMainContainer=styled.form`
     margin: 1rem auto;
     padding: 0.8rem;
     border-radius: 5px;
+    @media screen and (max-width:1024px) {
+        width: 65%;
+    }
     @media screen and (max-width: 750px) {
         width: 90%;
     }
@@ -16,6 +19,8 @@ const FormMainContainer=styled.form`
 const InputBox=styled.input`
     width: 60%;
     border-radius: 5px;
+    outline: none;
+    border: none;
 `
 const ComentsBox=styled.textarea`
     width: 60%;
@@ -24,10 +29,12 @@ const ComentsBox=styled.textarea`
 const BtnForm=styled.button`
     width: 50%;
     border-radius: 5px;
+    border: solid 2px #567199;
     cursor: pointer;
     &:hover{
         background-color: #567199 ;
         color: #cdcdcd;
+        border: solid 2px #cdcdcd;
         transition: 0.5s all ease;
     }
 `

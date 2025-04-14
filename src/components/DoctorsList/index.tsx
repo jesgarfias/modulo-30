@@ -11,7 +11,9 @@ const DoctorsList=():JSX.Element=>{
         <ListContainer>
             <MainBaner>
                     <ImageBaner src={directorio} alt="consultorio médico" />
-                    <BannerTitle>Directorio médico</BannerTitle>
+                    <div style={{display:'flex', justifyContent:'center'}}>
+                        <BannerTitle>Directorio médico</BannerTitle>
+                    </div>
             </MainBaner>
             <InputSectionContainer>
                 <InputSection type="text" placeholder="Busca por especialidad" onChange={(e)=>setQuery(e.target.value)}/>

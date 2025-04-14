@@ -45,9 +45,11 @@ const ImageBaner=styled.img`
 `
 const BannerTitle=styled.h1`
     position: absolute;
-    right: 35%;
     bottom: 10px;
     font-size: 2em;
+    @media screen and (max-width: 500px) {
+        font-size: 1em;
+    }
 `
 const InputSectionContainer=styled.div`
     background-color:#d9d9d9;

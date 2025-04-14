@@ -41,6 +41,9 @@ const AbuotUsImgContainer=styled.div`
     @media screen and (max-width: 900px){
         width: 65%;
     }
+    @media screen  and (max-width:820px) {
+        width: 86%;
+    }
 `
 const TextContainer=styled.div`
     width: 85%;

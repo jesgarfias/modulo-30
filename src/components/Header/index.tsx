@@ -1,14 +1,16 @@
-import styled from "../Header/styled.module.css"
 import { JSX } from "react"; 
 import { useRef } from "react";
+import styles from "../Header/Navbarstyle.module.css"
 import Logo from "../Icons/Logo";
 import { HeaderContainer, HeaderLink, HeaderLinkContainer, HeaderLogoContainer, HeaderLogoText, HeaderNav } from "./styled";
+import BtnMenu from "../Icons/BtmMenu";
+import CloseBtn from "../Icons/CloseBtn";
 
 const Header =():JSX.Element=>{
     const navRef=useRef<HTMLElement | null>(null)
     const showNav=()=>{
         console.log(navRef.current)
-        navRef.current?.classList.toggle("show")
+        navRef.current?.classList.toggle(styles.show)
     }
     return(
         <HeaderContainer>
@@ -20,7 +22,7 @@ const Header =():JSX.Element=>{
                 </HeaderLogoText>
             </HeaderLogoContainer>
         
-            <HeaderNav ref={navRef}>
+            <HeaderNav ref={navRef} className={styles.nav}>
                 <HeaderLinkContainer>
                     <HeaderLink to="/">Inicio</HeaderLink>
                 </HeaderLinkContainer>
@@ -30,9 +32,9 @@ const Header =():JSX.Element=>{
                 <HeaderLinkContainer>
                     <HeaderLink to="/departments">Departamentos</HeaderLink>
                 </HeaderLinkContainer>
-                <button  onClick={showNav}>close</button>
+                <button className={styles.CloseBtn} onClick={showNav}><CloseBtn/></button>
             </HeaderNav>
-            <button onClick={showNav}>open</button>
+            <button className={styles.btn} onClick={showNav}><BtnMenu/></button>
         </HeaderContainer>
     )
 }

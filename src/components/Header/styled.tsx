@@ -6,6 +6,9 @@ const HeaderContainer=styled.header`
     position: sticky;
     top: 0;
     z-index: 1;
+    @media screen and (max-width:700px) {
+        justify-content: space-between;
+    }
 `
 const HeaderLogoContainer=styled.section`
     display: flex;
@@ -26,13 +29,10 @@ const HeaderNav= styled.nav`
     width:75%;
     justify-content: space-around;
     align-items: center;
-    @media screen and (max-width:640px){
-        flex-direction:column ;
-    }
 `
 
 const HeaderLink=styled(Link)`
-    color: #111;
+    color: #000000;
     text-decoration: none;
     font-size: 1.5em;
     padding: 0.5rem;
